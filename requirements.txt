@@ -10,3 +10,11 @@ shap
 streamlit
 optuna
 mlflow
+streamlit
+pandas
+numpy
+scikit-learn
+shap
+joblib
+xgboost
+matplotlib

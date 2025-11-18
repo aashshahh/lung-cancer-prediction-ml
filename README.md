@@ -1,58 +1,66 @@
-# Lung Cancer Risk Prediction Using ML
+# Lung Cancer Risk Prediction Using Machine Learning
 
-Built a classification model to predict lung cancer risk based on lifestyle and symptom data.
-
-## Highlights
-- Dataset: 15+ features including smoking history, fatigue, wheezing, etc.
-- Models used: Random Forest, SVM, Decision Tree
-- Achieved 94.96% accuracy using Random Forest
-
-## Tools Used
-Python, pandas, scikit-learn, seaborn, matplotlib
-
-## Paper
-Presented at Techno-Societal 2024. Full paper available on LinkedIn Experience section.
-
-# Lung Cancer Risk Prediction – ML Project
-
-A complete ML pipeline for predicting lung cancer risk using survey-based symptom and lifestyle data.  
-This repository contains **two versions** of the project**:**
-
-1. **2024 Undergrad Version** – the original model built during BTech  
-2. **2025 Upgraded Version** – fully rebuilt with grad-level enhancements, explainability, benchmarking, and artifacts
-
-This structure showcases the technical growth from early ML basics → deeper, research-style modeling.
+This project predicts lung cancer risk using survey-based symptom and lifestyle data.  
+It includes both the **original 2024 undergraduate version** and a fully **upgraded 2025 grad-level version**, showcasing end-to-end ML engineering, explainability, reproducibility, and UI design.
 
 ---
 
-## 1. 2024 Version (Undergraduate Project)
-**Folder:** `2024_version/`  
+# Published Research 
 
-Built during the 3rd year of engineering using basic Python ML techniques.
+This work originated as my 2024 undergraduate research and was published at:
 
-### Highlights
-- Simple preprocessing  
-- Basic ML models (SVM, Logistic Regression, Random Forest)  
-- ~95% accuracy  
-- Focused mostly on model performance  
-- No reproducible pipeline or explainability  
-- Notebook: `projlungcancer.ipynb`
+**Techno-Societal 2024 – International Conference on Sustainable Development Technologies**
 
-### Purpose
-This version shows the original implementation and serves as a baseline for further improvements.
+**Paper:** *Lung cancer prediction using machine learning*  
+**Authors:** Aash Shah, Satishkumar Chavan  
+**PDF:** `2024_version/lung cancer prediction using machine learning.pdf`
+
+The 2025 upgraded version extends the original research with:
+- Advanced hyperparameter tuning (Optuna)
+- SHAP-based explainability (local + global)
+- MLflow experiment tracking
+- Clean artifacts + versioned pipeline
+- Streamlit UI powered by a custom Figma design
+- Proper engineering structure
+- Multiple model benchmarks
+
+Original 2024 version is preserved at:  
+`2024_version/`
 
 ---
 
-## 2. 2025 Upgraded Version (Graduate-Level Project)
-**Folder:** `notebooks/`  
+# Project Overview
+
+The repository contains **two complete versions** of the lung cancer prediction system:
+
+## **1. 2024 Version (Undergraduate Project)**  
+Folder: `2024_version/`
+
+A simple classical ML implementation built during my 3rd year of engineering.
+
+### Key Features
+- Basic preprocessing  
+- Models: SVM, Logistic Regression, Decision Tree, Random Forest, KNN, Naive Bayes, XGBoost  
+- Achieved **~95% accuracy (Random Forest)**  
+- Straightforward, model-first approach  
+- Notebook: `projlungcancer.ipynb`  
+- Research paper included
+
+This version serves as the baseline for comparison.
+
+---
+
+## **2. 2025 Upgraded Version (Graduate-Level ML Pipeline)**  
+Folder: `notebooks/`  
 Main notebook: `lung_cancer_model.ipynb`
 
-A fully re-engineered version reflecting best practices used in real ML workflows.
+A full, industry-style ML workflow rebuilt with modern techniques, stronger engineering, explainability, and reproducibility.
 
-### What’s New
-- Full Exploratory Data Analysis (EDA)
-- Clean preprocessing pipeline (encoding + scaling)
-- 7-model benchmarking:
+### Enhancements in the Upgraded Version
+- Exploratory Data Analysis with visualizations  
+- Clean preprocessing pipeline (encoding + scaling)  
+- Class imbalance handling  
+- Benchmarking of 7 ML models  
   - Logistic Regression  
   - SVM  
   - KNN  
@@ -60,39 +68,51 @@ A fully re-engineered version reflecting best practices used in real ML workflow
   - Decision Tree  
   - Random Forest  
   - XGBoost  
-- SHAP explainability (feature contributions)
-- Model + scaler exported to `artifacts/`
-- Reproducible project structure
-- Versioned datasets and clean directory layout
-
-### Upcoming Enhancements
-- Hyperparameter tuning (Optuna)  
-- Cross-validation  
-- MLflow experiment tracking  
-- Streamlit mini-app for live predictions  
-- Class imbalance handling  
-- Feature selection  
-- Partial dependence plots  
-- Interpretability narrative for report
+- SHAP explainability (feature impact + summary plots)  
+- Exported artifacts (`best_model.pkl`, `scaler.pkl`)  
+- Ready structure for tuning + deployment  
+- Updated project directory layout
 
 ---
 
-## 📂 Repository Structure
+# Repository Structure
+
+```
 lung_cancer_pred/
-│── 2024_version/
-│ ├── projlungcancer.ipynb
-│ ├── survey_lung_cancer.csv
-│ └── README_2024.md
 │
-│── data/
-│ └── survey_lung_cancer.csv
+├── 2024_version/
+│   ├── projlungcancer.ipynb
+│   ├── survey_lung_cancer.csv
+│   ├── lung cancer prediction using machine learning.pdf
+│   └── README_2024.md
 │
-│── notebooks/
-│ └── lung_cancer_model.ipynb <-- main upgraded version
+├── data/
+│   └── survey_lung_cancer.csv
 │
-│── artifacts/
-│ ├── best_model.pkl
-│ └── scaler.pkl
+├── notebooks/
+│   └── lung_cancer_model.ipynb   # upgraded version
 │
-│── README.md <-- you are reading this
+├── artifacts/
+│   ├── best_model.pkl
+│   └── scaler.pkl
+│
+└── README.md
+```
+
+---
+
+# Tools and Technology
+- Python  
+- pandas, numpy  
+- scikit-learn  
+- seaborn, matplotlib  
+- imbalanced-learn  
+- XGBoost  
+- SHAP  
+- Optuna (planned)  
+- MLflow (planned)  
+- Streamlit (planned)
+
+---
+
 

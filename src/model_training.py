@@ -15,3 +15,12 @@ def train_svm(X, y):
     acc = accuracy_score(y_test, preds)
 
     return model, acc
+import joblib
+import os
+
+ARTIFACT_PATH = os.path.join(os.path.dirname(os.path.dirname(__file__)), "artifacts")
+
+def load_model():
+    model = joblib.load(os.path.join(ARTIFACT_PATH, "tuned_rf.pkl"))
+    scaler = joblib.load(os.path.join(ARTIFACT_PATH, "scaler.pkl"))
+    return model, scaler
