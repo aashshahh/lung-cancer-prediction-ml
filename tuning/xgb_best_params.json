@@ -1,0 +1,7 @@
+{
+    "eta": 0.07585056369512876,
+    "max_depth": 8,
+    "subsample": 0.5866723675747674,
+    "colsample_bytree": 0.5551122504936103,
+    "min_child_weight": 1
+}

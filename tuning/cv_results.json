@@ -1,0 +1,21 @@
+{
+    "Random Forest": {
+        "n_estimators": 553,
+        "max_depth": 22,
+        "min_samples_split": 7,
+        "min_samples_leaf": 1,
+        "bootstrap": false
+    },
+    "XGBoost": {
+        "eta": 0.07585056369512876,
+        "max_depth": 8,
+        "subsample": 0.5866723675747674,
+        "colsample_bytree": 0.5551122504936103,
+        "min_child_weight": 1
+    },
+    "SVM": {
+        "C": 9.961172098942914,
+        "gamma": 0.04418398830131178,
+        "kernel": "sigmoid"
+    }
+}
