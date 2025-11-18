@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/aashshah/Documents/coding/lung_cancer_pred/notebooks/mlruns/271837672855319926/263e118ac4e34b348d63b11d8f4ed2ae/artifacts
+end_time: 1763502856915
+entry_point_name: ''
+experiment_id: '271837672855319926'
+lifecycle_stage: active
+run_id: 263e118ac4e34b348d63b11d8f4ed2ae
+run_name: Tuned XGBoost
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1763502855798
+status: 3
+tags: []
+user_id: aashshah

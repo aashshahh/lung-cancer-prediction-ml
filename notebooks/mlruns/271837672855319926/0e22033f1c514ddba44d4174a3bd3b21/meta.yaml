@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/aashshah/Documents/coding/lung_cancer_pred/notebooks/mlruns/271837672855319926/0e22033f1c514ddba44d4174a3bd3b21/artifacts
+end_time: 1763502855797
+entry_point_name: ''
+experiment_id: '271837672855319926'
+lifecycle_stage: active
+run_id: 0e22033f1c514ddba44d4174a3bd3b21
+run_name: Tuned Random Forest
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1763502853780
+status: 3
+tags: []
+user_id: aashshah
