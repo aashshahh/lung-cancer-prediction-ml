@@ -1,8 +1,8 @@
 
 # Lung Cancer Risk Prediction Using Machine Learning
 
-This project predicts lung cancer risk using survey-based symptom and lifestyle data.  
-It includes both the **original 2024 undergraduate version** and a fully **upgraded 2025 grad-level version**, showcasing end-to-end ML engineering, explainability, reproducibility, and UI design.
+This project predicts lung cancer risk using survey based symptom and lifestyle data.  
+It includes both the **original 2024 undergraduate version** and a fully **upgraded 2025 version**, showcasing end-to-end ML engineering, explainability, reproducibility, and UI design.
 
 ---
 
@@ -18,7 +18,7 @@ This work originated as my 2024 undergraduate research and was published at:
 
 The 2025 upgraded version extends the original research with:
 - Advanced hyperparameter tuning (Optuna)
-- SHAP-based explainability (local + global)
+- SHAP based explainability (local + global)
 - MLflow experiment tracking
 - Clean artifacts + versioned pipeline
 - Streamlit UI powered by a custom Figma design
@@ -43,7 +43,7 @@ A simple classical ML implementation built during my 3rd year of engineering.
 - Basic preprocessing  
 - Models: SVM, Logistic Regression, Decision Tree, Random Forest, KNN, Naive Bayes, XGBoost  
 - Achieved **~95% accuracy (Random Forest)**  
-- Straightforward, model-first approach  
+- Straightforward, model first approach adapted 
 - Notebook: `projlungcancer.ipynb`  
 - Research paper included
 
