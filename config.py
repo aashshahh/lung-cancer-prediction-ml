@@ -1,0 +1,29 @@
+"""
+Central config — all constants live here.
+Change RANDOM_SEED or CV_FOLDS here and it propagates everywhere.
+"""
+
+RANDOM_SEED = 42
+TEST_SIZE = 0.2
+CV_FOLDS = 5
+
+DATA_PATH = "data/raw/survey_lung_cancer.csv"
+ARTIFACTS_PATH = "artifacts/"
+MODELS_PATH = "artifacts/models/"
+PLOTS_PATH = "artifacts/plots/"
+RESULTS_PATH = "artifacts/results/"
+
+FEATURES = [
+    "GENDER", "AGE", "SMOKING", "YELLOW_FINGERS", "ANXIETY",
+    "PEER_PRESSURE", "CHRONIC_DISEASE", "FATIGUE", "ALLERGY",
+    "WHEEZING", "ALCOHOL_CONSUMING", "COUGHING",
+    "SHORTNESS_OF_BREATH", "SWALLOWING_DIFFICULTY", "CHEST_PAIN"
+]
+TARGET = "LUNG_CANCER"
+
+BINARY_FEATURES = [
+    "SMOKING", "YELLOW_FINGERS", "ANXIETY", "PEER_PRESSURE",
+    "CHRONIC_DISEASE", "FATIGUE", "ALLERGY", "WHEEZING",
+    "ALCOHOL_CONSUMING", "COUGHING", "SHORTNESS_OF_BREATH",
+    "SWALLOWING_DIFFICULTY", "CHEST_PAIN"
+]

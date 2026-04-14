@@ -1,0 +1,208 @@
+/* ===========================
+   Base layout
+   =========================== */
+
+.stApp {
+    background-color: #0e1117;
+    font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    color: #ffffff;
+}
+
+/* Remove default padding at top */
+.block-container {
+    padding-top: 1.5rem !important;
+}
+
+/* Center the image Streamlit renders */
+.stImage img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ===========================
+   Typography
+   =========================== */
+
+.title {
+    text-align: center;
+    font-size: 38px;
+    font-weight: 800;
+    color: #ffffff;
+    margin-bottom: 0.2rem;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 14px;
+    color: #b0b0b0;
+    margin-bottom: 1.8rem;
+}
+
+/* Line under the header */
+.divider {
+    height: 4px;
+    width: 60%;
+    margin: 0.8rem auto 2.2rem auto;
+    border-radius: 999px;
+    background: linear-gradient(90deg, #1f6feb, #58a6ff);
+}
+
+/* ===========================
+   Cards
+   =========================== */
+
+.card {
+    padding: 1.8rem 1.6rem 1.3rem 1.6rem;
+    background: #161b22;
+    border-radius: 18px;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.45);
+    border: 1px solid rgba(240, 246, 252, 0.08);
+    animation: fadeInUp 0.45s ease-out;
+}
+
+/* Result card */
+.result-card {
+    padding: 1.6rem;
+    background: #1b212d;
+    border-radius: 18px;
+    margin-top: 1.8rem;
+    text-align: center;
+    border: 1px solid rgba(240, 246, 252, 0.15);
+    box-shadow: 0px 8px 22px rgba(0, 0, 0, 0.5);
+    animation: fadeInUp 0.4s ease-out;
+}
+
+.high-risk {
+    color: #ff6b6b;
+    font-size: 28px;
+    font-weight: 800;
+    margin-bottom: 0.3rem;
+}
+
+.low-risk {
+    color: #4cd964;
+    font-size: 28px;
+    font-weight: 800;
+    margin-bottom: 0.3rem;
+}
+
+.prob {
+    font-size: 17px;
+    color: #d0d0d0;
+}
+
+/* ===========================
+   Button
+   =========================== */
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 2.1rem;
+}
+
+.stButton > button {
+    background: #1f6feb;
+    color: #ffffff;
+    padding: 0.7rem 2.4rem;
+    border-radius: 999px;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    min-width: 180px;
+    transition: transform 0.15s ease-out, box-shadow 0.15s ease-out,
+                background 0.15s ease-out;
+}
+
+.stButton > button:hover {
+    background: #388bfd;
+    transform: translateY(-2px);
+    box-shadow: 0px 6px 16px rgba(56, 139, 253, 0.45);
+}
+
+/* ===========================
+   Inputs
+   =========================== */
+
+/* This targets most input containers */
+.stNumberInput input,
+.stSelectbox div[data-baseweb="select"] {
+    background-color: #1b212d !important;
+    border-radius: 12px !important;
+    border: 1px solid rgba(240, 246, 252, 0.18) !important;
+    color: #ffffff !important;
+}
+
+/* Label text */
+.css-10trblm, .css-16huue1 {
+    color: #e6edf3 !important;
+}
+
+/* ===========================
+   Spacing utilities
+   =========================== */
+
+.spacer-sm {
+    height: 0.75rem;
+}
+
+.spacer-md {
+    height: 1.25rem;
+}
+
+.spacer-lg {
+    height: 2rem;
+}
+
+/* ===========================
+   Animations
+   =========================== */
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ===========================
+   Light theme overrides
+   (only applied when extra CSS is injected)
+   =========================== */
+
+.light-theme .stApp {
+    background-color: #f5f7fb;
+    color: #111827;
+}
+
+.light-theme .title {
+    color: #111827;
+}
+
+.light-theme .subtitle {
+    color: #4b5563;
+}
+
+.light-theme .card {
+    background: #ffffff;
+    border-color: rgba(15, 23, 42, 0.08);
+}
+
+.light-theme .result-card {
+    background: #ffffff;
+    border-color: rgba(15, 23, 42, 0.1);
+}
+
+.light-theme .stButton > button {
+    background: #2563eb;
+}
+
+.light-theme .stButton > button:hover {
+    background: #1d4ed8;
+}
